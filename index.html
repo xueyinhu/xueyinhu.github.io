@@ -71,6 +71,55 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-Tensorflow-API-2-6-0" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/27/Tensorflow-API-2-6-0/" class="article-date">
+  <time class="dt-published" datetime="2021-09-26T22:59:02.089Z" itemprop="datePublished">2021-09-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p><font size=3 color=orange>Tensorflow 2.6.0 API [date: 2021-09-27 00:27]</font></p>
+<h3 id=""><a href="#" class="headerlink" title="."></a>.</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">&quot;&quot;&quot; 模块</span></span><br><span class="line"><span class="string">audio 针对音频文件的命名空间</span></span><br><span class="line"><span class="string">autodiff</span></span><br><span class="line"><span class="string">autograph</span></span><br><span class="line"><span class="string">bitwise</span></span><br><span class="line"><span class="string">compat</span></span><br><span class="line"><span class="string">config</span></span><br><span class="line"><span class="string">data</span></span><br><span class="line"><span class="string">debugging</span></span><br><span class="line"><span class="string">distribute</span></span><br><span class="line"><span class="string">dtypes</span></span><br><span class="line"><span class="string">errors</span></span><br><span class="line"><span class="string">estimator</span></span><br><span class="line"><span class="string">experimental</span></span><br><span class="line"><span class="string">feature_column</span></span><br><span class="line"><span class="string">graph_util</span></span><br><span class="line"><span class="string">image</span></span><br><span class="line"><span class="string">initializers</span></span><br><span class="line"><span class="string">io</span></span><br><span class="line"><span class="string">keras</span></span><br><span class="line"><span class="string">linalg</span></span><br><span class="line"><span class="string">lite</span></span><br><span class="line"><span class="string">lookup</span></span><br><span class="line"><span class="string">losses</span></span><br><span class="line"><span class="string">math</span></span><br><span class="line"><span class="string">metrics</span></span><br><span class="line"><span class="string">mixed_precision</span></span><br><span class="line"><span class="string">mlir</span></span><br><span class="line"><span class="string">nest</span></span><br><span class="line"><span class="string">nn</span></span><br><span class="line"><span class="string">optimizers</span></span><br><span class="line"><span class="string">profiler</span></span><br><span class="line"><span class="string">quantization</span></span><br><span class="line"><span class="string">queue</span></span><br><span class="line"><span class="string">ragged</span></span><br><span class="line"><span class="string">random</span></span><br><span class="line"><span class="string">raw_ops</span></span><br><span class="line"><span class="string">saved_model</span></span><br><span class="line"><span class="string">sets</span></span><br><span class="line"><span class="string">signal</span></span><br><span class="line"><span class="string">sparse</span></span><br><span class="line"><span class="string">strings</span></span><br><span class="line"><span class="string">summary</span></span><br><span class="line"><span class="string">syscinfig</span></span><br><span class="line"><span class="string">test</span></span><br><span class="line"><span class="string">tpu</span></span><br><span class="line"><span class="string">train</span></span><br><span class="line"><span class="string">types</span></span><br><span class="line"><span class="string">version</span></span><br><span class="line"><span class="string">xla</span></span><br><span class="line"><span class="string">&quot;&quot;&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="tf"><a href="#tf" class="headerlink" title="tf"></a>tf</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">```</span><br><span class="line"></span><br><span class="line"><span class="comment">### tf.audio</span></span><br><span class="line"></span><br><span class="line">```python</span><br><span class="line"><span class="comment"># Functions</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27; 将一个16位的PCM WAV文件 转换成一个float张量</span></span><br><span class="line"><span class="string">contents: 字符串类型的张量，WAV编码音频</span></span><br><span class="line"><span class="string">desired_channels=-1 需要的采样通道标识</span></span><br><span class="line"><span class="string">desired_samples=-1 需要的音频长度</span></span><br><span class="line"><span class="string">:return (audio, sample_rate)</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">tf.audio.decode_wav(</span><br><span class="line">    contents, desired_channels=-<span class="number">1</span>, desired_samples=-<span class="number">1</span>, name=<span class="literal">None</span></span><br><span class="line">)</span><br><span class="line"><span class="string">&#x27;&#x27;&#x27; 将音频数据使用16bit PCM WAV格式进行编码</span></span><br><span class="line"><span class="string">audio float32，[长度，通道]</span></span><br><span class="line"><span class="string">sample_rate 采样频率的标量</span></span><br><span class="line"><span class="string">:return string</span></span><br><span class="line"><span class="string">&#x27;&#x27;&#x27;</span></span><br><span class="line">tf.audio.encode_wav(</span><br><span class="line">    audio, sample_rate, name=<span class="literal">None</span></span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h3 id="tf-keras"><a href="#tf-keras" class="headerlink" title="tf.keras"></a>tf.keras</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Modules</span></span><br><span class="line">&gt;&gt; activations</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/27/Tensorflow-API-2-6-0/" data-id="cku1ts80o0000g4usaf0g888k" data-title="" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Git与Github使用教程回顾" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/09/27/Git%E4%B8%8EGithub%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%9E%E9%A1%BE/" class="article-date">
@@ -139,7 +188,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/27/Git%E4%B8%8EGithub%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%9E%E9%A1%BE/" data-id="cku1fdaok0000q0ushkv73w6a" data-title="Git与Github使用教程回顾" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/27/Git%E4%B8%8EGithub%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%9E%E9%A1%BE/" data-id="cku1ts80s0001g4uscicj8byl" data-title="Git与Github使用教程回顾" class="article-share-link">Share</a>
       
       
       
@@ -192,7 +241,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/25/hello-world/" data-id="cku1fdaop0001q0us59bg03cf" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/25/hello-world/" data-id="cku1ts8120004g4ush8xme9lb" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -247,6 +296,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/09/27/Tensorflow-API-2-6-0/">(no title)</a>
+          </li>
         
           <li>
             <a href="/2021/09/27/Git%E4%B8%8EGithub%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%9E%E9%A1%BE/">Git与Github使用教程回顾</a>
