@@ -71,6 +71,108 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-hexo简明教程" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2021/09/27/hexo%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/" class="article-date">
+  <time class="dt-published" datetime="2021-09-26T23:31:04.000Z" itemprop="datePublished">2021-09-27</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="p-name article-title" href="/2021/09/27/hexo%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/">hexo简明教程</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h3 id="本篇博客用于整理Hexo框架的简要使用教程"><a href="#本篇博客用于整理Hexo框架的简要使用教程" class="headerlink" title="本篇博客用于整理Hexo框架的简要使用教程"></a>本篇博客用于整理Hexo框架的简要使用教程</h3><hr>
+<p>一. Hexo框架的简要介绍：</p>
+<p>​    Hexo是一个快速、简洁且有效的博客框架，使用Markdown语法（或其他渲染引擎）解析文章，在几秒内，利用靓丽的主题生成静态网页。</p>
+<p>二. Hexo文件夹的文件介绍：</p>
+<p>​    网站的配置文件：_config.yml</p>
+<p><font size=3 color=yellow>网站配置</font></p>
+<p>​    Title 网站标题</p>
+<p>​    subtitle 网站副标题</p>
+<p>​    description 网站描述，主要用于告诉SEO，是一个站点的简要描述，通常建议在其中包括网站的关键词</p>
+<p>​    keywords 网站关键词，支持多个关键词</p>
+<p>​    author 显示网站的作者</p>
+<p>​    language 网站使用的语言，对于简体中文用户来说，使用不同的主题需要设置成不同的值，常见的可以使用zh-CN和zh-Hans</p>
+<p>​    timezone 网站时区，Hexo默认使用的是所在电脑的时</p>
+<p><font size=3 color=yellow>网址配置</font></p>
+<p>​    url 网址，若网站放在子目录，则将url设置为相应的路径</p>
+<p>​    root 网站根目录，默认值为url的路径名称</p>
+<p>​    permalink 文章的永久链接格式，默认为:year/:month/:day/:title/</p>
+<p>​    permalink_defaults 永久链接中各部分的默认值</p>
+<p>​    pretty_urls 改写permalink的默认值</p>
+<p>​    pertty_url.trailing_index 是否在永久链接中保留尾部的index.html，设置为false时去除，默认为true</p>
+<p>​    pretty_urls.trailing_html 是否在永久链接中保留尾部的.html，设置为false去除（对尾部的index.html无效），默认为true</p>
+<p><font size=3 color=yellow>目录配置</font></p>
+<p>​    source_dir 资源文件夹，这个文件夹用于存放内容，默认为目录下的source文件夹</p>
+<p>​    public_dir 公共文件夹，这个文件夹用于存放生成的站点文件，默认为目录下的public文件夹</p>
+<p>​    tag_dir 标签文件夹，默认为目录下的tags文件夹</p>
+<p>​    archive_dir 归档文件夹，默认为目录下的archive文件夹</p>
+<p>​    category_dir 分类文件夹，默认为目录下的category文件夹</p>
+<p>​    code_dir include code文件夹，source_dir下的子目录，默认为目录下的downloads/code文件夹</p>
+<p>​    i18n_dir 国际化（i18n）文件夹，默认值为:lang</p>
+<p>​    skip_render 跳过指定文件的渲染，匹配到的文件将不会被不做改动的复制到public目录中</p>
+<p><font size=3 color=yellow>文章配置</font></p>
+<p>​    new_post_name 新的文章名称，默认值为:title.md</p>
+<p>​    default_layout 预设布局，默认值为post</p>
+<p>​    auto_spacing 在中文和英文之间加入空格，默认值为false</p>
+<p>​    titlecase 将标题转换为title case，默认值为false</p>
+<p>​    external_link 在新标签中打开链接，默认值为true</p>
+<p>​    external_link.enable 在新标签中打开链接，默认值为true</p>
+<p>​    external_link.field 对整个网站（site）生效或仅对文章（post）生效，默认值为site</p>
+<p>​    external_link.exclude 需要排除的域名，主域名和子域名如www需要分别配置，默认值为[]</p>
+<p>​    filename_case 将文件名称转换成（1）小写或（2）大写，默认值为0</p>
+<p>​    render_drafts 显示草稿，默认值为false</p>
+<p>​    post_asset_folder 启动Asset文件夹，默认值为false</p>
+<p>​    relative_link 将链接改为与根目录的相应位址，默认值为false</p>
+<p>​    future 显示未来的文章，默认值为true</p>
+<p>​    highlight 代码块的设置</p>
+<p>​    prismjs 代码块的设置</p>
+<p><font size=3 color=yellow>分类与标签配置</font></p>
+<p>​    default_category 默认分类，默认值为uncategorized</p>
+<p>​    category_map 分类别名</p>
+<p>​    tag_map 标签别名</p>
+<p><font size=3 color=yellow>日期或时间格式配置</font></p>
+<p>​    date_format 日期格式，默认值为YYYY-MM-DD</p>
+<p>​    time_format 日期格式，默认值为HH:mm:ss</p>
+<p>​    updated_option 当Front Matter中没有指定updated时updated的值，默认值为mtime</p>
+<p><font size=3 color=yellow>分页配置</font></p>
+<p>​    per_page 每页显示的文章量（0=关闭分页功能），默认值为10</p>
+<p>​    pagination_dir 分页目录，默认值时page</p>
+<p><font size=3 color=yellow>扩展配置</font></p>
+<p>​    theme 当前的主题名称，值为false时禁用主题</p>
+<p>​    theme_config 主题的配置文件。在这里放置的配置会覆盖主题目录下的_config.yml中的配置</p>
+<p>​    deploy 部署部分的设置</p>
+<p>​    meta_generator Meta generator 标签。值为false时Hexo不会在头部插入该标签</p>
+<p>包括或不包括目录或文件</p>
+<p>​    include Hexo默认会忽略隐藏文件和文件夹（包括名称以下划线和.开头的文件和文件夹），</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://example.com/2021/09/27/hexo%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/" data-id="cku201x6q0004usus7wk428mv" data-title="hexo简明教程" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+  
     <article id="post-Tensorflow-API-2-6-0" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   <div class="article-meta">
     <a href="/2021/09/27/Tensorflow-API-2-6-0/" class="article-date">
@@ -157,7 +259,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/27/Tensorflow-API-2-6-0/" data-id="cku1ur96q0002bcus12tg1mve" data-title="" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/27/Tensorflow-API-2-6-0/" data-id="cku201x6i0000usushuaobkkc" data-title="" class="article-share-link">Share</a>
       
       
       
@@ -237,7 +339,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/27/Git%E4%B8%8EGithub%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%9E%E9%A1%BE/" data-id="cku1ur96o0001bcus9xje729v" data-title="Git与Github使用教程回顾" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/27/Git%E4%B8%8EGithub%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B%E5%9B%9E%E9%A1%BE/" data-id="cku201x6m0001usus07iyazom" data-title="Git与Github使用教程回顾" class="article-share-link">Share</a>
       
       
       
@@ -290,7 +392,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://example.com/2021/09/25/hello-world/" data-id="cku1ur96k0000bcus5zbo9vwf" data-title="Hello World" class="article-share-link">Share</a>
+      <a data-url="http://example.com/2021/09/25/hello-world/" data-id="cku201x6o0002usus4iqua57s" data-title="Hello World" class="article-share-link">Share</a>
       
       
       
@@ -345,6 +447,10 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2021/09/27/hexo%E7%AE%80%E6%98%8E%E6%95%99%E7%A8%8B/">hexo简明教程</a>
+          </li>
         
           <li>
             <a href="/2021/09/27/Tensorflow-API-2-6-0/">(no title)</a>
